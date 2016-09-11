@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Hello World",
+  "short_name": "Hello World",
+  "description": "A new tab that displays hello world",
+  "version": "1.2",
+
+  "icons": {
+    "128": "icon.png"
+  },
+
+  "chrome_url_overrides" : {
+    "newtab": "popup.html"
+  },
+
+  "permissions": [
+    "storage"
+  ]
+    
+    
+  
+}

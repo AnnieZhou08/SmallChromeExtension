@@ -1,0 +1,68 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Hello World</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      p{
+        color: black; 
+        font-family: "Courier";
+        font-size: 20px;
+        margin-left: 43%;
+        margin-top: 23%;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 30em;
+        animation: type 4s steps(60, end); 
+      }
+
+p a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+	color: #8B8B8B;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="popup.js"></script>
+  </head>
+  <body>
+      <p> Hello World ... </p>
+    <img id="image-result" hidden>
+  </body>
+</html>
+
