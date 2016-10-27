@@ -11,6 +11,9 @@
     body {
       font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
       font-size: 100%;
+      background: linear-gradient(270deg,#FF7F00,#FFAA00);
+      background-size: 400% 400%;
+      -webkit-animation: backgroundChange 20s ease infinite;
     }
     p{
       color: black; 
@@ -49,6 +52,12 @@
 
     @keyframes blink{
       to{ opacity: .0; }
+    }
+        
+    @-webkit-keyframes backgroundChange {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
     }
     </style>
 
